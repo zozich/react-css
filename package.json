@@ -9,7 +9,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "node-sass": "^4.13.1",
-    "pre-commit": "^1.2.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -23,7 +22,6 @@
     "test-hook": "CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "pre-commit": [ "test-hook" ],
   "eslintConfig": {
     "extends": "react-app"
   },
