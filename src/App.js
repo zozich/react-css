@@ -1,27 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import styles from './App.module.scss';
+import './App.scss';
+import Header from './components/Header/Header';
+import SimpleCard from './components/Card/Card';
+import Button from '@material-ui/core/Button';
+import TextField from '@material-ui/core/TextField';
 
 function App() {
-  console.log('Styles', styles);
-  console.log('Styles', styles.App);
-
   return (
-    <div className={styles.App}>
-      <header className={styles['App-header']}>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Header />
+      <SimpleCard />
+      <Button variant='outlined'>Simple button</Button>
+      <TextField placeholder='Login' name='login' classes={{}} inputProps={{className: 'text-field'}} />
     </div>
   );
 }
