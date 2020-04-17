@@ -5,10 +5,11 @@ node_js:
 
 cache:
   directories:
-    - node_modules
+    - ./client/node_modules
+    - ./server/node_modules
 
 before_script:
-  - npm install
+  - npm install --prefix client
 
 script:
-  - npm run test-hook
+  - npm run test-hook --prefix client
