@@ -17,6 +17,8 @@ app.get('/emails', function (req, res) {
   res.send(emails);
 });
 
+app.use(express.static('public'));
+
 app.listen(3000, function () {
   console.log('Example app listening on port 3000!');
 });
