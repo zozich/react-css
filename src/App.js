@@ -12,6 +12,7 @@ function App() {
       <SimpleCard />
       <Button variant='outlined'>Simple button</Button>
       <TextField placeholder='Login' name='login' classes={{}} inputProps={{className: 'text-field'}} />
+      This should fail
     </div>
   );
 }
